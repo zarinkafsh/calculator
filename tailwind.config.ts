@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        card: "#252d44",
+        displayCalc: "#181f32",
+        equal: "#f96c5b",
+        reset: "#a2b3e1"
       },
     },
   },
