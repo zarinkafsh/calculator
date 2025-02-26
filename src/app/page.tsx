@@ -84,10 +84,7 @@ export default function Home() {
   const handleClickButton = (key: string) => {
     if (key === "=") calculate();
     else if (key === "DEL" || key === "RESET") clear();
-    else if (history) {
-      clear();
-      appendToDisplay(key)
-    }
+    
     else appendToDisplay(key);
   };
 

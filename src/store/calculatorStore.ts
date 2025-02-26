@@ -21,7 +21,7 @@ export const useCalculatorStore = create<State>((set) => ({
   appendToDisplay: (value: string) =>
     set((state) => ({
       display:
-        state.display === "0" || !state.history
+        state.display === "0"
           ? value
           : state.display + value,
     })),
@@ -33,6 +33,5 @@ export const useCalculatorStore = create<State>((set) => ({
   calculate: () =>
     set((state) => ({
       display: evaluate(state.display),
-      history: [...state.history, state.display],
     })),
 }));
